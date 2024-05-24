@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="bakery.png" alt="DIKBakery" width="250">
+        <nav>
+            <div class="HeaderMenu">
+                <div class="quick-access" onclick="scrollToSection('cakes')">Продукція</div>
+                <div class="quick-access" onclick="scrollToSection('about-us')">Про нас</div>
+                <div class="quick-access" onclick="scrollToSection('user-reviews')">Відгуки</div>
+                <div class="quick-access" onclick="scrollToSection('contacts')">Контакти</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-large" , id="bakeryPhoto">
+            <img src="main.png" alt="bakery" width="100%" height="100%">
+        </section>
+        <section id="cakes">
+            <h2 style="text-align: center;">Наші полуничні новинки:</h2>
+            <div class="image-container">
+                <img src="strawberry1.png" alt="Cake1" width="315">
+                <img src="strawberry2.png" alt="Cake2" width="270">
+                <img src="strawberry3.png" alt="Cake3" width="315">
+            </div>
+        </section>
+        <section id="about-us">
+            <h2>Про нас:</h2>
+            <ul>
+                <li>Історія: Відкрита у 2005 році з метою робити людей щасливішими за допомогою смачної випічки та
+                    доброзичливого обслуговування.</li>
+                <li>Асортимент: У нас ви знайдете широкий вибір свіжої випічки, включаючи хліб, булочки, тістечка та
+                    торти. Кожен десерт виготовлений вручну з найкращих продуктів.</li>
+                <li>Атмосфера: Наша пекарня - це місце, де кожен відчуває себе як удома. У нас завжди пахне свіжою
+                    випічкою, а привітний персонал завжди радий вас бачити.</li>
+                <li>Спільнота: Ми пишаємося тим, що створили справжню спільноту любителів солодощів. У нас завжди весело
+                    та смачно!</li>
+            </ul>
+        </section>
+        <section id="user-reviews">
+            <h2>Наші задоволені клієнти</h2>
+            <div class="review">
+                <h3>Наталя:</h3>
+                <p>Просто чудове місце! Їхня випічка та десерти завжди свіжі та неймовірно смачні. Приємна атмосфера і
+                    доброзичливий персонал створюють по-справжньому затишну атмосферу. Раджу спробувати їхні торти — це
+                    справжня розкіш для смаку!</p>
+            </div>
+            <div class="review">
+                <h3>Марія:</h3>
+                <p>мій улюблений заклад! Їхня випічка завжди свіжа і неймовірно смачна. Великий вибір десертів за
+                    доступними цінами. Атмосфера дуже затишна, завдяки чому завжди приємно тут перебувати. Рекомендую
+                    всім, хто любить солодке!</p>
+            </div>
+        </section>
+
+        <section id="write-review">
+            <h2>Ваш відгук</h2>
+            <form id="review-form">
+                <div>
+                    <label for="username">Ваше імʼя:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="comment">Ваш відгук:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+
+        <section id="contacts">
+            <div class="contacts-header">
+                <h2>Контакти</h2>
+            </div>
+            <div class="contacts-content">
+                <div class="column">
+                    <img src="location1.png" alt="location" width="200">
+                </div>
+                <div class="column">
+                    <b>Адрес</b>
+                    <p>вул. Коритнянська, 6</p>
+                    <p>м. Київ</p>
+                </div>
+                <div class="column">
+                    <b>Телефон</b>
+                    <p>+380 67 80 8040</p>
+                </div>
+                <div class="column">
+                    <b>Режим роботи:</b>
+                    <p>Пн: 07:00 – 20:00</p>
+                    <p>Вт: 07:00 – 20:00</p>
+                    <p>Ср: 07:00 – 20:00</p>
+                    <p>Чт: 07:00 – 20:00</p>
+                    <p>Пт: 07:00 – 20:00</p>
+                    <p>Сб: 07:00 – 20:00</p>
+                    <p>Нд: 07:00 – 18:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Дізайнайтесь більше в наших соц.мережах <a href="https://example.com">social media</a>.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>
